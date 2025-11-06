@@ -59,7 +59,7 @@ back-end.
 
 [source,bash,run]
 ----
-podman run -d --pod my-app --name database -e MYSQL_ROOT_PASSWORD="r3dh@t123" -e MYSQL_USER="dbuser" -e MYSQL_PASSWORD="redhat" -e MYSQL_DATABASE="testdb" quay.io/fedora/mariadb-105+`
+podman run -d --pod my-app --name database -e MYSQL_ROOT_PASSWORD="r3dh@t123" -e MYSQL_USER="dbuser" -e MYSQL_PASSWORD="redhat" -e MYSQL_DATABASE="testdb" quay.io/fedora/mariadb-105
 ----
 
 And now, if we check `+podman pod ps+` we should see our pod running
