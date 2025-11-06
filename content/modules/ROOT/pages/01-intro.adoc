@@ -56,6 +56,7 @@ podman run -d --pod my-app --name http registry.access.redhat.com/ubi9/httpd-24
 
 We’ll also create a second container within our pod for a database
 back-end.
+
 [source,bash,run]
 ----
 podman run -d --pod my-app --name database -e MYSQL_ROOT_PASSWORD="r3dh@t123" -e MYSQL_USER="dbuser" -e MYSQL_PASSWORD="redhat" -e MYSQL_DATABASE="testdb" quay.io/fedora/mariadb-105+`
