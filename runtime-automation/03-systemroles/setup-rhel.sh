@@ -2,7 +2,7 @@
 echo "Starting module called 03-systemroles" >> /tmp/progress.log
 
 dnf -y install rhel-system-roles
-cat << EOF > /root/my-app/my-app-deploy.yaml
+cat << EOF > ~/my-app/my-app-deploy.yaml
 ---
 - name: Run the podman system role
   hosts: ContainerHosts
@@ -22,7 +22,7 @@ cat << EOF > /root/my-app/my-app-deploy.yaml
     - rhel-system-roles.podman
 EOF
 
-cat << EOF > /root/my-app/inventory
+cat << EOF > ~/my-app/inventory
 [ContainerHosts]
 containerhost
 EOF

@@ -31,7 +31,7 @@ spec:
       runAsNonRoot: true
 EOF
 
-cat << EOF > my-app/my-app-configmap.yaml
+cat << EOF > ~/my-app/my-app-configmap.yaml
 kind: ConfigMap
 metadata:
   name: my-app-env
