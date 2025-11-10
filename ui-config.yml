@@ -19,4 +19,4 @@ tabs:
   - name: "containerhost"
     url: /wetty_containerhost/ssh/root
     modules:
-     - name: "03-systemroles"
+     - "03-systemroles"
