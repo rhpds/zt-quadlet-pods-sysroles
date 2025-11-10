@@ -67,7 +67,9 @@ ____
 _NOTE_: The execution of ansible-playbook will first attempt to connect
 to `+containerhost+`. This will generate a question from ssh, asking
 whether you accept `+containerhost+`’s ssh key. You will need to tell it
-`+yes+` image:ssh-accept.png[Accept SSH Key]
+`+yes+` 
+
+image:ssh-accept.png[Accept SSH Key]
 ____
 
 You should see many lines of Ansible output as the playbook performs
