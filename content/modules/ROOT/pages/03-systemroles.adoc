@@ -63,14 +63,15 @@ Run the following command
 ansible-playbook -i ./inventory ./my-app-deploy.yaml
 ----
 
-____
-_NOTE_: The execution of ansible-playbook will first attempt to connect
-to `+containerhost+`. This will generate a question from ssh, asking
+[NOTE] 
+====
+The execution of ansible-playbook will first attempt to connect
+to `+containerhost+`. This may generate a question from ssh, asking
 whether you accept `+containerhost+`’s ssh key. You will need to tell it
 `+yes+` 
 
 image:ssh-accept.png[Accept SSH Key]
-____
+====
 
 You should see many lines of Ansible output as the playbook performs
 different tasks on `+containerhost+`, and once it is complete you will
