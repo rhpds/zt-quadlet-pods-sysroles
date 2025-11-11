@@ -110,7 +110,7 @@ You should see it up and running, we can also check podman.
 podman pod ps
 ----
 
-.Optional: Making changes with Ansible.
+== Optional: Making changes with Ansible.
 [%collapsible]
 ====
 We can also make changes within ansible. Let’s say that we made a
