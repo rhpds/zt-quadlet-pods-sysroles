@@ -92,9 +92,9 @@ from `+rhel+` we should get the RHEL test page.
 curl http://containerhost:8080
 ----
 
-Now, let’s switch to the containerhost tab, and look at podman.
+Now, let’s switch to the `containerhost` tab, and look at podman.
 
-After switching to the containerhost tab, check the status in
+After switching to the `containerhost` tab, check the status in
 systemd of the my-app service.
 
 [source,bash,run]
@@ -129,8 +129,7 @@ Finally, we’ll need to change the port that our ansible playbook opens,
 in the `+my-app-deploy.yaml+` file chage line 9 from
 `+- port: 8080/tcp+` to `+- port: 80/tcp+`.
 
-Now head back to the link:tab-0[button label="`RHEL`"
-background="`#ee0000`" color="`#c7c7c7`"] tab, and double-check that the
+Now head back to the `RHEL` tab, and double-check that the
 changes are correct.
 
 [source,bash,run]
