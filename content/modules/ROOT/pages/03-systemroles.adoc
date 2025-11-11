@@ -92,10 +92,9 @@ from `+rhel+` we should get the RHEL test page.
 curl http://containerhost:8080
 ----
 
-Now, let’s switch to the ContainerHost tab, and look at podman.
+Now, let’s switch to the containerhost tab, and look at podman.
 
-After switching to the link:tab-1[button label="`ContainerHost`"
-background="`#ee0000`" color="`#c7c7c7`"] tab, check the status in
+After switching to the containerhost tab, check the status in
 systemd of the my-app service.
 
 [source,bash,run]
