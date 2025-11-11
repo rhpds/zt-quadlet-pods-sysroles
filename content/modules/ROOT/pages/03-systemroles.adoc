@@ -110,14 +110,13 @@ You should see it up and running, we can also check podman.
 podman pod ps
 ----
 
-== Making changes with Ansible.
-
+.Optional: Making changes with Ansible.
+[%collapsible]
+====
 We can also make changes within ansible. Let’s say that we made a
 mistake and meant to forward port 80 to port 8080 on our container.
 There are three places which we would have to set that. The quadlet
-definition, the Kube yaml, and of course the deployment playbook. Let’s
-switch to link:tab-2[button label="`File Browser`"
-background="`#ee0000`" color="`#c7c7c7`"] and make those changes.
+definition, the Kube yaml, and of course the deployment playbook. You can use a text editor of your choice to make those changes.
 
 First, open up `+my-app.yaml+` and change line 15 from
 `+hostPort: 8080+` to `+hostPort: 80+`. The changes will save
@@ -165,6 +164,7 @@ Once the playbook finishes, our application should be listening on port
 curl http://containerhost:80
 ----
 
+====
 == Conclusion
 
 In this lab we’ve taken a basic pod deployment in Podman, and turned it
