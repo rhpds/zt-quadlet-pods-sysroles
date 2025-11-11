@@ -126,7 +126,7 @@ Then head over to `+quadlet/my-app.kube+` and change line 8 from
 changes will save automatically.
 
 Finally, we’ll need to change the port that our ansible playbook opens,
-in the `+my-app-deploy.yaml+` file chage line 9 from
+in the `+my-app-deploy.yaml+` file change line 9 from
 `+- port: 8080/tcp+` to `+- port: 80/tcp+`.
 
 Now head back to the `+RHEL+` tab, and double-check that the
