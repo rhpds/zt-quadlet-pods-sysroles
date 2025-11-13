@@ -5,7 +5,7 @@ give you some brief background. Podman is an Open Container Initiative
 this lab to teach you the basics of Podman, but know that it is a
 docker-compatible command line tool that will allow you to run
 Containers on linux. You can find more labs related to Podman in other
-https://lab.redhat.com[Red Hat Online Labs] if you would like to learn
+https://lab.redhat.com[Red Hat Online Labs^] if you would like to learn
 more.
 
 # What is a pod? 
