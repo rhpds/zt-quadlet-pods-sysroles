@@ -1,5 +1,5 @@
 lab:
-  name: "Managing Podman Pods with Quadlets, and System Roles"
+  name: "Managing Podman Pods with Quadlets and System Roles"
   shortname: "zt-quadlet-pods-sysroles"
   maintainer: "Will Kibbe (wkibbe@redhat.com)" 
   
