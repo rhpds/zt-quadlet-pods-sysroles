@@ -10,9 +10,13 @@ antora:
       label: "Quadlets"
       solveButton: false
     - name: "03-systemroles"
-      label: "Systemroles"
+      label: "System Roles"
       solveButton: false
 
 tabs:
-  - name: ">_ terminal"
+  - name: "RHEL"
     url: /wetty_rhel/ssh/root
+  - name: "containerhost"
+    url: /wetty_containerhost/ssh/root
+    modules:
+     - "03-systemroles"

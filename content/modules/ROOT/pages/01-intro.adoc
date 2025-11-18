@@ -1,13 +1,15 @@
-# What is Podman? If you are not already familiar with podman, let us
+# What is Podman?
+If you are not already familiar with podman, let us
 give you some brief background. Podman is an Open Container Initiative
 (OCI) compliant container runtime for Linux. It is not the purpose of
 this lab to teach you the basics of Podman, but know that it is a
 docker-compatible command line tool that will allow you to run
 Containers on linux. You can find more labs related to Podman in other
-https://lab.redhat.com[Red Hat Online Labs] if you would like to learn
+https://lab.redhat.com[Red Hat Online Labs^] if you would like to learn
 more.
 
-# What is a pod? Additionally you may be wondering what a pod is within
+# What is a pod? 
+Additionally you may be wondering what a pod is within
 podman. A Podman container pod is a group of one or more containers. The
 pod concept was introduced by Kubernetes. Podman pods are similar to the
 Kubernetes definition. A pod will group containers together, linking
@@ -18,8 +20,8 @@ application all within a pod. Those two containers would be able to
 communicate with each-other, and you would be able to start and stop
 both containers by telling the pod to start or stop once it is defined.
 
-# And what then, is Quadlet? Quadlet is a generator for systemd that
-will create unit files to control podman resources through systemctl.
+# And what then, is Quadlet? 
+Quadlet is a generator for systemd that will create unit files to control podman resources through systemctl.
 For instance, you can define a pod within quadlet, and then use
 systemctl to start and stop the entire pod. When these pods are then
 stopped, they are deleted, and then when they are started, they are
@@ -32,7 +34,7 @@ stopped/removed.
 In this lab we will use all of these technologies to show you how to
 more easily manage container’s on your Red Hat Enterprise Linux system.
 
-# Making our pod Let’s start out by creating a pod, and some containers.
+# Making our pod: Let’s start out by creating a pod, and some containers.
 Then later we’ll export that pod’s definition for use with Quadlet.
 
 Making a pod is easy, we just use `+podman pod create+` and tell podman
@@ -54,7 +56,11 @@ podman run -d --pod my-app --name http registry.access.redhat.com/ubi9/httpd-24
 
 We’ll also create a second container within our pod for a database
 back-end.
-`+bash,run   podman run -d --pod my-app --name database -e MYSQL_ROOT_PASSWORD="r3dh@t123" -e MYSQL_USER="dbuser" -e MYSQL_PASSWORD="redhat" -e MYSQL_DATABASE="testdb" quay.io/fedora/mariadb-105+`
+
+[source,bash,run]
+----
+podman run -d --pod my-app --name database -e MYSQL_ROOT_PASSWORD="r3dh@t123" -e MYSQL_USER="dbuser" -e MYSQL_PASSWORD="redhat" -e MYSQL_DATABASE="testdb" quay.io/fedora/mariadb-105
+----
 
 And now, if we check `+podman pod ps+` we should see our pod running
 with 3 containers (one of them is the infrastructure container for the

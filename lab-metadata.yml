@@ -1,0 +1,12 @@
+lab:
+  name: "Managing Podman Pods with Quadlets, and System Roles"
+  shortname: "zt-quadlet-pods-sysroles"
+  maintainer: "Will Kibbe (wkibbe@redhat.com)" 
+  
+  description:
+    summary: "Learn how to deploy a pre-defined Podman Pod using Quadlet and SystemD, then automate it with RHEL System Roles!"
+    time_to_complete: "10"
+    
+  git_ref:
+    production: "prod"
+    development: "dev"
